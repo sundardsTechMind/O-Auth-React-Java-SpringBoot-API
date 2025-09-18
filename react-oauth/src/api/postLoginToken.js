@@ -10,7 +10,7 @@ export const postLoginToken = async idToken => {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(idToken), // body의 데이터 유형은 반드시 "Content-Type" 헤더와 일치해야 함
+      body: JSON.stringify(idToken), 
     });
     if (!response.ok) throw new Error('bad server condition');
     return true;
